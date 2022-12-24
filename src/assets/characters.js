@@ -5,10 +5,6 @@ export class Character {
     this.attacksInfo = attacksInfo;
     this.attacks = [];
   }
-
-  setupAttacks(attacks) {
-    this.attacks = attacks
-  }
 }
 
 export let paco = new Character(
