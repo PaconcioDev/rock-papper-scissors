@@ -65,17 +65,17 @@ function showDescription(character) {
     btnScissors.innerText = "Scissors";
 
     const btnRockImg = document.createElement("img");
-    btnRockImg.src = "/src/imgs/cobblestone.webp";
+    btnRockImg.src = "imgs/cobblestone.webp";
     btnRockImg.alt = "Rock";
     btnRock.appendChild(btnRockImg);
 
     const btnPapperImg = document.createElement("img");
-    btnPapperImg.src = "/src/imgs/papper.webp";
+    btnPapperImg.src = "imgs/papper.webp";
     btnPapperImg.alt = "Papper";
     btnPapper.appendChild(btnPapperImg);
 
     const btnScissorsImg = document.createElement("img");
-    btnScissorsImg.src = "/src/imgs/scissors.png";
+    btnScissorsImg.src = "imgs/scissors.png";
     btnScissorsImg.alt = "Scissors";
     btnScissors.appendChild(btnScissorsImg);
 
@@ -312,15 +312,15 @@ function startGame() {
   const scissorsAttack = document.createElement("button");
 
   const rockAttackImg = document.createElement("img");
-  rockAttackImg.src = "/src/imgs/cobblestone.webp";
+  rockAttackImg.src = "imgs/cobblestone.webp";
   rockAttack.appendChild(rockAttackImg);
 
   const papperAttackImg = document.createElement("img");
-  papperAttackImg.src = "/src/imgs/papper.webp";
+  papperAttackImg.src = "imgs/papper.webp";
   papperAttack.appendChild(papperAttackImg);
 
   const scissorsAttackImg = document.createElement("img");
-  scissorsAttackImg.src = "/src/imgs/scissors.png";
+  scissorsAttackImg.src = "imgs/scissors.png";
   scissorsAttack.appendChild(scissorsAttackImg);
 
   if (currentCharacter === paolo) {
@@ -437,15 +437,15 @@ function startGame() {
   enemyScissorsAttack.style = "cursor: inherit";
 
   const enemyRockAttackImg = document.createElement("img");
-  enemyRockAttackImg.src = "/src/imgs/cobblestone.webp";
+  enemyRockAttackImg.src = "imgs/cobblestone.webp";
   enemyRockAttack.appendChild(enemyRockAttackImg);
 
   const enemyPapperAttackImg = document.createElement("img");
-  enemyPapperAttackImg.src = "/src/imgs/papper.webp";
+  enemyPapperAttackImg.src = "imgs/papper.webp";
   enemyPapperAttack.appendChild(enemyPapperAttackImg);
 
   const enemyScissorsAttackImg = document.createElement("img");
-  enemyScissorsAttackImg.src = "/src/imgs/scissors.png";
+  enemyScissorsAttackImg.src = "imgs/scissors.png";
   enemyScissorsAttack.appendChild(enemyScissorsAttackImg);
 
   enemyAttacksContainer.append(
