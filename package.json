@@ -4,7 +4,7 @@
   "description": "Classic rock papper scissors game but with characters ",
   "main": "index.js",
   "scripts": {
-    "deploy": "gh-pages .d src/"
+    "deploy": "gh-pages .d 'src/'"
   },
   "repository": {
     "type": "git",
