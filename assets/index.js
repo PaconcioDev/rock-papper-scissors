@@ -65,17 +65,17 @@ function showDescription(character) {
     btnScissors.innerText = "Scissors";
 
     const btnRockImg = document.createElement("img");
-    btnRockImg.src = "/src/imgs/Cobblestone.webp";
+    btnRockImg.src = "/src/imgs/cobblestone.webp";
     btnRockImg.alt = "Rock";
     btnRock.appendChild(btnRockImg);
 
     const btnPapperImg = document.createElement("img");
-    btnPapperImg.src = "/src/imgs/Papel.webp";
+    btnPapperImg.src = "/src/imgs/papper.webp";
     btnPapperImg.alt = "Papper";
     btnPapper.appendChild(btnPapperImg);
 
     const btnScissorsImg = document.createElement("img");
-    btnScissorsImg.src = "/src/imgs/Shear.png";
+    btnScissorsImg.src = "/src/imgs/scissors.png";
     btnScissorsImg.alt = "Scissors";
     btnScissors.appendChild(btnScissorsImg);
 
@@ -245,7 +245,7 @@ function startGame() {
   const secondScreen = document.createElement("section");
   secondScreen.id = "second-screen";
 
-  const battleMusic = new Audio("/src/audio/SpiderDance.mp3");
+  const battleMusic = new Audio("/src/audio/spider-dance.mp3");
   battleMusic.play();
 
   const battleTitle = document.createElement("h1");
@@ -312,15 +312,15 @@ function startGame() {
   const scissorsAttack = document.createElement("button");
 
   const rockAttackImg = document.createElement("img");
-  rockAttackImg.src = "/src/imgs/Cobblestone.webp";
+  rockAttackImg.src = "/src/imgs/cobblestone.webp";
   rockAttack.appendChild(rockAttackImg);
 
   const papperAttackImg = document.createElement("img");
-  papperAttackImg.src = "/src/imgs/Papel.webp";
+  papperAttackImg.src = "/src/imgs/papper.webp";
   papperAttack.appendChild(papperAttackImg);
 
   const scissorsAttackImg = document.createElement("img");
-  scissorsAttackImg.src = "/src/imgs/Shear.png";
+  scissorsAttackImg.src = "/src/imgs/scissors.png";
   scissorsAttack.appendChild(scissorsAttackImg);
 
   if (currentCharacter === paolo) {
@@ -437,15 +437,15 @@ function startGame() {
   enemyScissorsAttack.style = "cursor: inherit";
 
   const enemyRockAttackImg = document.createElement("img");
-  enemyRockAttackImg.src = "/src/imgs/Cobblestone.webp";
+  enemyRockAttackImg.src = "/src/imgs/cobblestone.webp";
   enemyRockAttack.appendChild(enemyRockAttackImg);
 
   const enemyPapperAttackImg = document.createElement("img");
-  enemyPapperAttackImg.src = "/src/imgs/Papel.webp";
+  enemyPapperAttackImg.src = "/src/imgs/papper.webp";
   enemyPapperAttack.appendChild(enemyPapperAttackImg);
 
   const enemyScissorsAttackImg = document.createElement("img");
-  enemyScissorsAttackImg.src = "/src/imgs/Shear.png";
+  enemyScissorsAttackImg.src = "/src/imgs/scissors.png";
   enemyScissorsAttack.appendChild(enemyScissorsAttackImg);
 
   enemyAttacksContainer.append(
