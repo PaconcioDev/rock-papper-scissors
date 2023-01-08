@@ -1,0 +1,28 @@
+{
+  "name": "yan-ken-po",
+  "version": "1.0.0",
+  "description": "Classic rock papper scissors game but with characters ",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/PaconcioDev/rock-papper-scissors.git"
+  },
+  "keywords": [
+    "javascript",
+    "vanilla",
+    "css",
+    "DOM"
+  ],
+  "author": "Francisco Gómez",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/PaconcioDev/rock-papper-scissors/issues"
+  },
+  "homepage": "https://github.com/PaconcioDev/rock-papper-scissors#readme",
+  "dependencies": {
+    "gh-pages": "^4.0.0"
+  }
+}
