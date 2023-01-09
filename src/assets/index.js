@@ -245,7 +245,7 @@ function startGame() {
   const secondScreen = document.createElement("section");
   secondScreen.id = "second-screen";
 
-  const battleMusic = new Audio("/src/audio/spider-dance.mp3");
+  const battleMusic = new Audio("audio/spider-dance.mp3");
   battleMusic.play();
 
   const battleTitle = document.createElement("h1");
