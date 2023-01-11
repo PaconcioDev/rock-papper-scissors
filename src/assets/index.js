@@ -247,6 +247,7 @@ function startGame() {
 
   const battleMusic = new Audio("audio/spider-dance.mp3");
   battleMusic.play();
+  battleMusic.volume = 0.5;
 
   const battleTitle = document.createElement("h1");
   battleTitle.innerText = "FIGHT!!";
@@ -504,29 +505,36 @@ function startGame() {
   };
 
   const checkBattleResult = () => {
+    const hitSound = new Audio("audio/hit.mp3");
     if (playerAttack === enemyAttack) {
       roundResult.innerText = "TIE!";
     } else if (playerAttack === 0) {
       if (enemyAttack === 1) {
+        hitSound.play();
         roundResult.innerText = "You lose :(";
         playerLoseLifePoint();
       } else {
+        hitSound.play();
         roundResult.innerText = "You win!";
         enemyLoseLifePoint();
       }
     } else if (playerAttack === 1) {
       if (enemyAttack === 0) {
+        hitSound.play();
         roundResult.innerText = "You win!";
         enemyLoseLifePoint();
       } else {
+        hitSound.play();
         roundResult.innerText = "You lose :(";
         playerLoseLifePoint();
       }
     } else {
       if (enemyAttack === 0) {
+        hitSound.play();
         roundResult.innerText = "You lose :(";
         playerLoseLifePoint();
       } else {
+        hitSound.play();
         roundResult.innerText = "You win!";
         enemyLoseLifePoint();
       }
@@ -556,11 +564,15 @@ function startGame() {
   };
 
   const isDead = () => {
+    const loseAudio = new Audio("audio/lose.mp3");
+    const winAudio = new Audio("audio/win.mp3");
     const restartBtn = document.createElement("button");
     restartBtn.id = "start-btn";
     restartBtn.innerText = "RESTART";
     restartBtn.addEventListener("click", () => window.location.reload());
     if (lifePoint1.classList.contains("lose-life")) {
+      battleMusic.pause();
+      loseAudio.play();
       playerCharacter.remove();
       vsTitle.remove();
       enemyAttacksContainer.remove();
@@ -569,6 +581,8 @@ function startGame() {
       enemyLife.remove();
       secondScreen.appendChild(restartBtn);
     } else if (enemyLifePoint1.classList.contains("lose-life")) {
+      battleMusic.pause();
+      winAudio.play();
       enemyCharacter.remove();
       vsTitle.remove();
       playerAttacksContainer.remove();
